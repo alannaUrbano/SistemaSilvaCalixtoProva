@@ -14,6 +14,10 @@ public class JFrmPrincipal extends javax.swing.JFrame {
         setTitle("Sistema Sense");
     }
 
+    JFrmPrincipal(Object object, boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {

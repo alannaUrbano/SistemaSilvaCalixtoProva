@@ -268,35 +268,8 @@ public class JDlgMecc_Compra extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnAlterarActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
-        // TODO add your handling code here:
-        //        int resp = JOptionPane.showConfirmDialog(null,
-            //                "Deseja excluir o registro", "Aviso",
-            //                JOptionPane.YES_NO_OPTION);
-        //        if (resp == JOptionPane.YES_OPTION) {
-            //            Mecc_usuario usuario = new Mecc_usuario();
-            //            int cod = Integer.valueOf(jTxtCodigo.getText());
-            //            usuario.setMecc_idusuario(cod);
-            //            usuario.setMecc_nome(jTxtNome.getText());
-            //            usuario.setMecc_apelido(jTxtApelido.getText());
-            //            usuario.setMecc_cpf(jTxtCpf.getText());
-            //            usuario.setMecc_senha(jTxtSenha.getText());
-            //            usuario.setMecc_dataNascimento(null);//jTxtDatanasc.getText());
-        //            usuario.setMecc_nivel(jCboNivel.getSelectedIndex());
-        //            if (jChbAtivo.isSelected() == true) {
-            //                usuario.setMecc_ativo("S");
-            //            } else {
-            //                usuario.setMecc_ativo("N");
-            //            }
-        //            Mecc_usuarioDAO usuarioDAO = new Mecc_usuarioDAO();
-        //            usuarioDAO.delete(usuario);
-        //
-        //            JOptionPane.showMessageDialog(null, "Exclusão Realizada.");
-        //        } else {
-        //            JOptionPane.showMessageDialog(null, "Exclusão Cancelada");
-        //
-        //    }
-        //        desabilitar();
 
+       
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed

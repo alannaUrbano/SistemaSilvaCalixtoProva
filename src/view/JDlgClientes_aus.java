@@ -392,6 +392,12 @@ public class JDlgClientes_aus extends javax.swing.JDialog {
     private void jBtnExcluir_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluir_ausActionPerformed
         // TODO add your handling code here:
        
+        int resp = JOptionPane.showConfirmDialog(null, "Confirma Exclusão", "deletar registro", JOptionPane.YES_NO_OPTION);
+        if (resp == JOptionPane.YES_OPTION) {
+            JOptionPane.showMessageDialog(null, "Exclusão Realizada.");
+        } else {
+            JOptionPane.showMessageDialog(null, "Exclusão Cancelada");
+        }
     }//GEN-LAST:event_jBtnExcluir_ausActionPerformed
 
     private void jBtnConfirmar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmar_ausActionPerformed

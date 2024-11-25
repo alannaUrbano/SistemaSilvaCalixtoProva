@@ -231,7 +231,13 @@ public class JDlgProdutos_aus extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnAlterar_ausActionPerformed
 
     private void jBtnExcluir_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluir_ausActionPerformed
-        // TODO add your handling code here:
+
+int resp = JOptionPane.showConfirmDialog(null, "Confirma Exclusão", "deletar registro", JOptionPane.YES_NO_OPTION);
+        if (resp == JOptionPane.YES_OPTION) {
+            JOptionPane.showMessageDialog(null, "Exclusão Realizada.");
+        } else {
+            JOptionPane.showMessageDialog(null, "Exclusão Cancelada");
+        }        // TODO add your handling code here:
        
     }//GEN-LAST:event_jBtnExcluir_ausActionPerformed
 

@@ -232,6 +232,8 @@ public class JDlgMecc_Avaliacao extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnAlterarActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
+
+
         // TODO add your handling code here:
         
     }//GEN-LAST:event_jBtnExcluirActionPerformed

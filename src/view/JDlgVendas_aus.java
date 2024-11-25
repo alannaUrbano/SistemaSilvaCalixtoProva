@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author User
@@ -263,34 +265,14 @@ public class JDlgVendas_aus extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnAlterar_ausActionPerformed
 
     private void jBtnExcluir_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluir_ausActionPerformed
-        // TODO add your handling code here:
-        //        int resp = JOptionPane.showConfirmDialog(null,
-            //                "Deseja excluir o registro", "Aviso",
-            //                JOptionPane.YES_NO_OPTION);
-        //        if (resp == JOptionPane.YES_OPTION) {
-            //            Mecc_usuario usuario = new Mecc_usuario();
-            //            int cod = Integer.valueOf(jTxtCodigo.getText());
-            //            usuario.setMecc_idusuario(cod);
-            //            usuario.setMecc_nome(jTxtNome.getText());
-            //            usuario.setMecc_apelido(jTxtApelido.getText());
-            //            usuario.setMecc_cpf(jTxtCpf.getText());
-            //            usuario.setMecc_senha(jTxtSenha.getText());
-            //            usuario.setMecc_dataNascimento(null);//jTxtDatanasc.getText());
-        //            usuario.setMecc_nivel(jCboNivel.getSelectedIndex());
-        //            if (jChbAtivo.isSelected() == true) {
-            //                usuario.setMecc_ativo("S");
-            //            } else {
-            //                usuario.setMecc_ativo("N");
-            //            }
-        //            Mecc_usuarioDAO usuarioDAO = new Mecc_usuarioDAO();
-        //            usuarioDAO.delete(usuario);
-        //
-        //            JOptionPane.showMessageDialog(null, "Exclusão Realizada.");
-        //        } else {
-        //            JOptionPane.showMessageDialog(null, "Exclusão Cancelada");
-        //
-        //    }
-        //        desabilitar();
+       
+        int resp = JOptionPane.showConfirmDialog(null, "Confirma Exclusão", "deletar registro", JOptionPane.YES_NO_OPTION);
+        if (resp == JOptionPane.YES_OPTION) {
+            JOptionPane.showMessageDialog(null, "Exclusão Realizada.");
+        } else {
+            JOptionPane.showMessageDialog(null, "Exclusão Cancelada");
+        }
+        
     }//GEN-LAST:event_jBtnExcluir_ausActionPerformed
 
     private void jBtnConfirmar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmar_ausActionPerformed

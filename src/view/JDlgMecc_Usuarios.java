@@ -15,32 +15,9 @@ public class JDlgMecc_Usuarios extends javax.swing.JDialog {
         initComponents();
         setLocationRelativeTo(null);
         setTitle("Cadastro do Usuário");
-        Util.habilitar(false, jBtnCancelar, jBtnConfirmar, jCboNivel, jChbAtivo, jTxtApelido, jTxtCodigo, jTxtCpf,
-                jTxtDatanasc, jTxtNome, jTxtSenha);
 
     }
 
-//   
-//    public void desabilitar() {
-//        jBtnConfirmar.setEnabled(false);
-//        jBtnCancelar.setEnabled(false);
-//        jBtnAlterar.setEnabled(true);
-//        jBtnExcluir.setEnabled(true);
-//        jBtnIncluir.setEnabled(true);
-//        jBtnPesquisar.setEnabled(true);
-//
-//        jTxtNome.setEnabled(false);
-//        jTxtApelido.setEnabled(false);
-//        jTxtCodigo.setEnabled(false);
-//        jTxtCpf.setEnabled(false);
-//        jTxtDatanasc.setEnabled(false);
-//        jTxtSenha.setEnabled(false);
-//        jBtnCancelar.setEnabled(false);
-//        jBtnConfirmar.setEnabled(false);
-//        jChbAtivo.setEnabled(false);
-//        jCboNivel.setEnabled(false);
-//
-//    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -52,20 +29,20 @@ public class JDlgMecc_Usuarios extends javax.swing.JDialog {
 
         jProgressBar1 = new javax.swing.JProgressBar();
         jLabel1 = new javax.swing.JLabel();
-        jTxtCodigo = new javax.swing.JTextField();
+        jTxtMecc_Codigo = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jTxtNome = new javax.swing.JTextField();
+        jTxtMecc_Nome = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jTxtApelido = new javax.swing.JTextField();
+        jTxtMecc_Apelido = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jTxtCpf = new javax.swing.JTextField();
-        jTxtDatanasc = new javax.swing.JTextField();
+        jTxtMecc_Cpf = new javax.swing.JTextField();
+        jTxtMecc_Datanasc = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jChbAtivo = new javax.swing.JCheckBox();
+        jChbMecc_Ativo = new javax.swing.JCheckBox();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jCboNivel = new javax.swing.JComboBox<>();
-        jTxtSenha = new javax.swing.JTextField();
+        jCboMecc_Nivel = new javax.swing.JComboBox<>();
+        jTxtMecc_Senha = new javax.swing.JTextField();
         jBtnIncluir = new javax.swing.JButton();
         jBtnAlterar = new javax.swing.JButton();
         jBtnExcluir = new javax.swing.JButton();
@@ -77,54 +54,54 @@ public class JDlgMecc_Usuarios extends javax.swing.JDialog {
 
         jLabel1.setText("Código");
 
-        jTxtCodigo.addActionListener(new java.awt.event.ActionListener() {
+        jTxtMecc_Codigo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtCodigoActionPerformed(evt);
+                jTxtMecc_CodigoActionPerformed(evt);
             }
         });
 
         jLabel2.setText("Nome");
 
-        jTxtNome.addActionListener(new java.awt.event.ActionListener() {
+        jTxtMecc_Nome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtNomeActionPerformed(evt);
+                jTxtMecc_NomeActionPerformed(evt);
             }
         });
 
         jLabel3.setText("Apelido");
 
-        jTxtApelido.addActionListener(new java.awt.event.ActionListener() {
+        jTxtMecc_Apelido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtApelidoActionPerformed(evt);
+                jTxtMecc_ApelidoActionPerformed(evt);
             }
         });
 
         jLabel4.setText("Cpf");
 
-        jTxtDatanasc.addActionListener(new java.awt.event.ActionListener() {
+        jTxtMecc_Datanasc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtDatanascActionPerformed(evt);
+                jTxtMecc_DatanascActionPerformed(evt);
             }
         });
 
         jLabel5.setText("Data Nascimento");
 
-        jChbAtivo.setText("Ativo");
+        jChbMecc_Ativo.setText("Ativo");
 
         jLabel6.setText("Nível");
 
         jLabel7.setText("Senha");
 
-        jCboNivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Cliente" }));
-        jCboNivel.addActionListener(new java.awt.event.ActionListener() {
+        jCboMecc_Nivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Cliente" }));
+        jCboMecc_Nivel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCboNivelActionPerformed(evt);
+                jCboMecc_NivelActionPerformed(evt);
             }
         });
 
-        jTxtSenha.addActionListener(new java.awt.event.ActionListener() {
+        jTxtMecc_Senha.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtSenhaActionPerformed(evt);
+                jTxtMecc_SenhaActionPerformed(evt);
             }
         });
 
@@ -182,48 +159,50 @@ public class JDlgMecc_Usuarios extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jBtnIncluir)
+                            .addGap(18, 18, 18)
+                            .addComponent(jBtnAlterar)
+                            .addGap(18, 18, 18)
+                            .addComponent(jBtnExcluir)
+                            .addGap(18, 18, 18)
+                            .addComponent(jBtnConfirmar)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jBtnCancelar)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(jBtnPesquisar))
+                        .addComponent(jLabel4)
+                        .addComponent(jLabel3)
+                        .addComponent(jLabel2)
+                        .addComponent(jLabel1)
+                        .addComponent(jTxtMecc_Codigo, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTxtMecc_Nome)
+                        .addComponent(jTxtMecc_Apelido))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jBtnIncluir)
-                        .addGap(18, 18, 18)
-                        .addComponent(jBtnAlterar)
-                        .addGap(18, 18, 18)
-                        .addComponent(jBtnExcluir)
-                        .addGap(18, 18, 18)
-                        .addComponent(jBtnConfirmar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jBtnCancelar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jBtnPesquisar))
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1)
-                    .addComponent(jTxtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTxtCpf, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTxtMecc_Cpf, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel7)
-                            .addComponent(jTxtSenha))
+                            .addComponent(jTxtMecc_Senha, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(38, 38, 38)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(124, 124, 124)
+                                .addGap(96, 96, 96)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jCboNivel, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jCboMecc_Nivel, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGap(4, 4, 4)
                                                 .addComponent(jLabel5))
                                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(jChbAtivo, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                                .addComponent(jChbMecc_Ativo, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                     .addComponent(jLabel6)))
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jTxtDatanasc, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addComponent(jTxtNome)
-                    .addComponent(jTxtApelido))
+                                .addComponent(jTxtMecc_Datanasc, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -232,32 +211,32 @@ public class JDlgMecc_Usuarios extends javax.swing.JDialog {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTxtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTxtMecc_Codigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTxtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTxtMecc_Nome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTxtApelido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTxtMecc_Apelido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTxtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtDatanasc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTxtMecc_Cpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtMecc_Datanasc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(jLabel7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCboNivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jChbAtivo))
+                    .addComponent(jCboMecc_Nivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jChbMecc_Ativo)
+                    .addComponent(jTxtMecc_Senha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(40, 40, 40)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBtnIncluir)
@@ -272,133 +251,59 @@ public class JDlgMecc_Usuarios extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTxtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtNomeActionPerformed
+    private void jTxtMecc_NomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtMecc_NomeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtNomeActionPerformed
+    }//GEN-LAST:event_jTxtMecc_NomeActionPerformed
 
-    private void jTxtDatanascActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtDatanascActionPerformed
+    private void jTxtMecc_DatanascActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtMecc_DatanascActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtDatanascActionPerformed
+    }//GEN-LAST:event_jTxtMecc_DatanascActionPerformed
 
-    private void jTxtSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtSenhaActionPerformed
+    private void jTxtMecc_SenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtMecc_SenhaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtSenhaActionPerformed
+    }//GEN-LAST:event_jTxtMecc_SenhaActionPerformed
 
-    private void jCboNivelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCboNivelActionPerformed
+    private void jCboMecc_NivelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCboMecc_NivelActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCboNivelActionPerformed
+    }//GEN-LAST:event_jCboMecc_NivelActionPerformed
 
     private void jBtnIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluirActionPerformed
         // TODO add your handling code here:
-        Util.habilitar(true, jTxtCpf, jTxtApelido, jTxtCodigo, jTxtDatanasc, jTxtNome, jTxtSenha, jBtnCancelar, jBtnConfirmar,
-                jCboNivel, jChbAtivo);
-        Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
-        Util.limpar(jTxtCpf, jTxtApelido, jTxtCodigo, jTxtDatanasc, jTxtNome, jTxtSenha, jCboNivel, jChbAtivo);
+       
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
     private void jBtnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelarActionPerformed
         // TODO add your handling code here:
-        Util.habilitar(true, jTxtCpf, jTxtApelido, jTxtCodigo, jTxtDatanasc, jTxtNome, jTxtSenha, jBtnCancelar, jBtnConfirmar,
-                jCboNivel, jChbAtivo);
-        Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
-        Util.limpar(jTxtCpf, jTxtApelido, jTxtCodigo, jTxtDatanasc, jTxtNome, jTxtSenha, jCboNivel, jChbAtivo);
+
     }//GEN-LAST:event_jBtnCancelarActionPerformed
 
-    private void jTxtCodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtCodigoActionPerformed
+    private void jTxtMecc_CodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtMecc_CodigoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtCodigoActionPerformed
+    }//GEN-LAST:event_jTxtMecc_CodigoActionPerformed
 
-    private void jTxtApelidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtApelidoActionPerformed
+    private void jTxtMecc_ApelidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtMecc_ApelidoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtApelidoActionPerformed
+    }//GEN-LAST:event_jTxtMecc_ApelidoActionPerformed
 
     private void jBtnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmarActionPerformed
         // TODO add your handling code here:
-//        Mecc_usuario usuario = new Mecc_usuario();
-//        int cod = Integer.valueOf(jTxtCodigo.getText());
-//        usuario.setMecc_idusuario(cod);
-//        usuario.setMecc_nome(jTxtNome.getText());
-//        usuario.setMecc_apelido(jTxtApelido.getText());
-//        usuario.setMecc_cpf(jTxtCpf.getText());
-//        usuario.setMecc_senha(jTxtSenha.getText());
-//        usuario.setMecc_dataNascimento(null);//jTxtDatanasc.getText());
-//        usuario.setMecc_nivel(jCboNivel.getSelectedIndex());
-//        if (jChbAtivo.isSelected() == true) {
-//            usuario.setMecc_ativo("S");
-//        } else {
-//            usuario.setMecc_ativo("N");
-//        }
-//
-//        Mecc_usuarioDAO mecc_usuarioDAO = new Mecc_usuarioDAO();
-//        mecc_usuarioDAO.insert(usuario);
-//        desabilitar();
 
-       Util.habilitar(false, jTxtCpf, jTxtApelido, jTxtCodigo, jTxtDatanasc, jTxtNome, jTxtSenha, 
-               jBtnCancelar, jBtnConfirmar, jCboNivel, jChbAtivo);
-        Util.habilitar(true, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
-        Util.limpar(jTxtCpf, jTxtApelido, jTxtCodigo, jTxtDatanasc, jTxtNome, jTxtSenha, jCboNivel, jChbAtivo);
     }//GEN-LAST:event_jBtnConfirmarActionPerformed
 
     private void jBtnAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterarActionPerformed
         // TODO add your handling code here:
-        Util.habilitar(true, jTxtCpf, jTxtApelido, jTxtCodigo, jTxtDatanasc, jTxtNome, jTxtSenha, jBtnCancelar, jBtnConfirmar,
-                jCboNivel, jChbAtivo);
-        Util.habilitar(false, jBtnAlterar, jBtnExcluir, jBtnIncluir, jBtnPesquisar);
-        Util.limpar(jTxtCpf, jTxtApelido, jTxtCodigo, jTxtDatanasc, jTxtNome, jTxtSenha, jCboNivel, jChbAtivo);
+
     }//GEN-LAST:event_jBtnAlterarActionPerformed
 
     private void jBtnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnExcluirActionPerformed
         // TODO add your handling code here:
-//        int resp = JOptionPane.showConfirmDialog(null,
-//                "Deseja excluir o registro", "Aviso",
-//                JOptionPane.YES_NO_OPTION);
-//        if (resp == JOptionPane.YES_OPTION) {
-//            Mecc_usuario usuario = new Mecc_usuario();
-//            int cod = Integer.valueOf(jTxtCodigo.getText());
-//            usuario.setMecc_idusuario(cod);
-//            usuario.setMecc_nome(jTxtNome.getText());
-//            usuario.setMecc_apelido(jTxtApelido.getText());
-//            usuario.setMecc_cpf(jTxtCpf.getText());
-//            usuario.setMecc_senha(jTxtSenha.getText());
-//            usuario.setMecc_dataNascimento(null);//jTxtDatanasc.getText());
-//            usuario.setMecc_nivel(jCboNivel.getSelectedIndex());
-//            if (jChbAtivo.isSelected() == true) {
-//                usuario.setMecc_ativo("S");
-//            } else {
-//                usuario.setMecc_ativo("N");
-//            }
-//            Mecc_usuarioDAO usuarioDAO = new Mecc_usuarioDAO();
-//            usuarioDAO.delete(usuario);
-//         
-//            JOptionPane.showMessageDialog(null, "Exclusão Realizada.");
-//        } else {
-//            JOptionPane.showMessageDialog(null, "Exclusão Cancelada");
-//        
-//    }
-//        desabilitar();
+
         
     }//GEN-LAST:event_jBtnExcluirActionPerformed
 
     private void jBtnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisarActionPerformed
         // TODO add your handling code here:
-//        String resp = JOptionPane.showInputDialog(null, "Entre com o código: ");
-//        Mecc_usuarioDAO mecc_usuarioDAO = new Mecc_usuarioDAO();
-//        
-//        int cod = Integer.parseInt(resp);
-//        Mecc_usuario usuario = (Mecc_usuario) mecc_usuarioDAO.list(cod);
-//        String cad = String.valueOf(usuario.getMecc_idusuario());
-//        jTxtCodigo.setText(cad);
-//        jTxtNome.setText(usuario.getMecc_nome());
-//        jTxtApelido.setText(usuario.getMecc_apelido());
-//        jTxtCpf.setText(usuario.getMecc_cpf());
-//        jTxtSenha.setText(usuario.getMecc_senha());
-//        //jTxtDatanasc.setText( usuario.getMecc_DataNascimento));
-//        jCboNivel.setSelectedIndex(usuario.getMecc_nivel());
-//        if (usuario.getMecc_ativo().equals("S") == true) {
-//            jChbAtivo.setSelected(true);
-//        } else {
-//            jChbAtivo.setSelected(false);
-//        }
+
         
     }//GEN-LAST:event_jBtnPesquisarActionPerformed
 
@@ -482,8 +387,8 @@ public class JDlgMecc_Usuarios extends javax.swing.JDialog {
     private javax.swing.JButton jBtnExcluir;
     private javax.swing.JButton jBtnIncluir;
     private javax.swing.JButton jBtnPesquisar;
-    private javax.swing.JComboBox<String> jCboNivel;
-    private javax.swing.JCheckBox jChbAtivo;
+    private javax.swing.JComboBox<String> jCboMecc_Nivel;
+    private javax.swing.JCheckBox jChbMecc_Ativo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -492,11 +397,11 @@ public class JDlgMecc_Usuarios extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JProgressBar jProgressBar1;
-    private javax.swing.JTextField jTxtApelido;
-    private javax.swing.JTextField jTxtCodigo;
-    private javax.swing.JTextField jTxtCpf;
-    private javax.swing.JTextField jTxtDatanasc;
-    private javax.swing.JTextField jTxtNome;
-    private javax.swing.JTextField jTxtSenha;
+    private javax.swing.JTextField jTxtMecc_Apelido;
+    private javax.swing.JTextField jTxtMecc_Codigo;
+    private javax.swing.JTextField jTxtMecc_Cpf;
+    private javax.swing.JTextField jTxtMecc_Datanasc;
+    private javax.swing.JTextField jTxtMecc_Nome;
+    private javax.swing.JTextField jTxtMecc_Senha;
     // End of variables declaration//GEN-END:variables
 }
