@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
 package view;
+import Tools.Util;
 import javax.swing.JOptionPane;
 
 /**
@@ -223,10 +224,16 @@ public class JDlgProdutos_aus extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBtnIncluir_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluir_ausActionPerformed
-        // TODO add your handling code here:
+        Util.habilitar(true, jBtnConfirmar_aus, jBtnCancelar_aus,jTxtCodigo_aus, jTxtCodigo_aus, jTxtAreaDoRosto_aus, jTxtComponentes_aus, jTxtMarca_aus, jTxtNome_aus, jTxtRestricoes_aus, jTxtValidade_aus, jTxtVolume_aus);
+        Util.habilitar(false, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.limpar(jTxtCodigo_aus, jTxtAreaDoRosto_aus, jTxtComponentes_aus, jTxtMarca_aus, jTxtNome_aus, jTxtRestricoes_aus, jTxtValidade_aus, jTxtVolume_aus);      
+        
+// TODO add your handling code here:
     }//GEN-LAST:event_jBtnIncluir_ausActionPerformed
 
     private void jBtnAlterar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterar_ausActionPerformed
+        Util.habilitar(false, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.habilitar(true, jBtnCancelar_aus, jBtnConfirmar_aus, jTxtCodigo_aus, jTxtAreaDoRosto_aus, jTxtComponentes_aus, jTxtMarca_aus, jTxtNome_aus, jTxtRestricoes_aus, jTxtValidade_aus, jTxtVolume_aus);
         // TODO add your handling code here:
     }//GEN-LAST:event_jBtnAlterar_ausActionPerformed
 
@@ -242,14 +249,21 @@ int resp = JOptionPane.showConfirmDialog(null, "Confirma Exclusão", "deletar re
     }//GEN-LAST:event_jBtnExcluir_ausActionPerformed
 
     private void jBtnConfirmar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmar_ausActionPerformed
-
+        Util.habilitar(true, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.habilitar(false, jBtnCancelar_aus, jBtnConfirmar_aus, jTxtCodigo_aus, jTxtAreaDoRosto_aus, jTxtComponentes_aus, jTxtMarca_aus, jTxtNome_aus, jTxtRestricoes_aus, jTxtValidade_aus, jTxtVolume_aus);
+        
     }//GEN-LAST:event_jBtnConfirmar_ausActionPerformed
 
     private void jBtnCancelar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelar_ausActionPerformed
-        // TODO add your handling code here:
+        Util.habilitar(true, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.habilitar(false, jBtnCancelar_aus, jBtnConfirmar_aus, jTxtCodigo_aus, jTxtAreaDoRosto_aus, jTxtComponentes_aus, jTxtMarca_aus, jTxtNome_aus, jTxtRestricoes_aus, jTxtValidade_aus, jTxtVolume_aus);           
+// TODO add your handling code here:
     }//GEN-LAST:event_jBtnCancelar_ausActionPerformed
 
     private void jBtnPesquisar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisar_ausActionPerformed
+
+        JDlgPesquisarProdutos_aus jDlgPesquisarProdutos_aus = new JDlgPesquisarProdutos_aus(null, true);
+        jDlgPesquisarProdutos_aus.setVisible(true);
         // TODO add your handling code here:
        
     }//GEN-LAST:event_jBtnPesquisar_ausActionPerformed

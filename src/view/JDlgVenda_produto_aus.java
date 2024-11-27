@@ -4,6 +4,7 @@
  */
 package view;
 
+import Tools.Util;
 import javax.swing.JOptionPane;
 
 /**
@@ -188,10 +189,15 @@ public class JDlgVenda_produto_aus extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBtnIncluir_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluir_ausActionPerformed
+        Util.habilitar(true, jBtnConfirmar_aus, jBtnCancelar_aus,jTxtCodigo_produtos_aus, jTxtDesconto_aus, jTxtObservacao_aus, jTxtPreco_unitario_aus, jTxtQuantidade_aus);
+        Util.habilitar(false, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.limpar(jTxtCodigo_produtos_aus, jTxtDesconto_aus, jTxtObservacao_aus, jTxtPreco_unitario_aus, jTxtQuantidade_aus);
         // TODO add your handling code here:
     }//GEN-LAST:event_jBtnIncluir_ausActionPerformed
 
     private void jBtnAlterar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterar_ausActionPerformed
+        Util.habilitar(false, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.habilitar(true, jBtnCancelar_aus, jBtnConfirmar_aus, jTxtCodigo_produtos_aus, jTxtDesconto_aus, jTxtObservacao_aus, jTxtPreco_unitario_aus, jTxtQuantidade_aus);
         // TODO add your handling code here:
     }//GEN-LAST:event_jBtnAlterar_ausActionPerformed
 
@@ -210,51 +216,21 @@ public class JDlgVenda_produto_aus extends javax.swing.JDialog {
     
     
     private void jBtnConfirmar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmar_ausActionPerformed
-        // TODO add your handling code here:
-        //        Mecc_usuario usuario = new Mecc_usuario();
-        //        int cod = Integer.valueOf(jTxtCodigo.getText());
-        //        usuario.setMecc_idusuario(cod);
-        //        usuario.setMecc_nome(jTxtNome.getText());
-        //        usuario.setMecc_apelido(jTxtApelido.getText());
-        //        usuario.setMecc_cpf(jTxtCpf.getText());
-        //        usuario.setMecc_senha(jTxtSenha.getText());
-        //        usuario.setMecc_dataNascimento(null);//jTxtDatanasc.getText());
-        //        usuario.setMecc_nivel(jCboNivel.getSelectedIndex());
-        //        if (jChbAtivo.isSelected() == true) {
-            //            usuario.setMecc_ativo("S");
-            //        } else {
-            //            usuario.setMecc_ativo("N");
-            //        }
-        //
-        //        Mecc_usuarioDAO mecc_usuarioDAO = new Mecc_usuarioDAO();
-        //        mecc_usuarioDAO.insert(usuario);
-        //        desabilitar();
+        Util.habilitar(true, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.habilitar(false, jBtnCancelar_aus, jBtnConfirmar_aus, jTxtCodigo_produtos_aus, jTxtDesconto_aus, jTxtObservacao_aus, jTxtPreco_unitario_aus, jTxtQuantidade_aus);
+      
     }//GEN-LAST:event_jBtnConfirmar_ausActionPerformed
 
     private void jBtnCancelar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelar_ausActionPerformed
-        // TODO add your handling code here:
+        Util.habilitar(true, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.habilitar(false, jBtnCancelar_aus, jBtnConfirmar_aus, jTxtCodigo_produtos_aus, jTxtDesconto_aus, jTxtObservacao_aus, jTxtPreco_unitario_aus, jTxtQuantidade_aus);   
+     // TODO add your handling code here:
     }//GEN-LAST:event_jBtnCancelar_ausActionPerformed
 
     private void jBtnPesquisar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisar_ausActionPerformed
-        // TODO add your handling code here:
-        //        String resp = JOptionPane.showInputDialog(null, "Entre com o código: ");
-        //        Mecc_usuarioDAO mecc_usuarioDAO = new Mecc_usuarioDAO();
-        //
-        //        int cod = Integer.parseInt(resp);
-        //        Mecc_usuario usuario = (Mecc_usuario) mecc_usuarioDAO.list(cod);
-        //        String cad = String.valueOf(usuario.getMecc_idusuario());
-        //        jTxtCodigo.setText(cad);
-        //        jTxtNome.setText(usuario.getMecc_nome());
-        //        jTxtApelido.setText(usuario.getMecc_apelido());
-        //        jTxtCpf.setText(usuario.getMecc_cpf());
-        //        jTxtSenha.setText(usuario.getMecc_senha());
-        //        //jTxtDatanasc.setText( usuario.getMecc_DataNascimento));
-        //        jCboNivel.setSelectedIndex(usuario.getMecc_nivel());
-        //        if (usuario.getMecc_ativo().equals("S") == true) {
-            //            jChbAtivo.setSelected(true);
-            //        } else {
-            //            jChbAtivo.setSelected(false);
-            //        }
+    
+         JDlgPesquisarClientes_aus jDlgPesquisarClientes_aus = new JDlgPesquisarClientes_aus(null, true);
+        jDlgPesquisarClientes_aus.setVisible(true);
     }//GEN-LAST:event_jBtnPesquisar_ausActionPerformed
 
     /**

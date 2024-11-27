@@ -4,6 +4,7 @@
  */
 package view;
 
+import Tools.Util;
 import javax.swing.JOptionPane;
 
 /**
@@ -34,11 +35,11 @@ public class JDlgVendas_aus extends javax.swing.JDialog {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         Transporte = new javax.swing.JLabel();
-        jTxt_vendas_aus = new javax.swing.JTextField();
+        jTxtCodigoVendas_aus = new javax.swing.JTextField();
         jTxtData_aus = new javax.swing.JTextField();
         jTxtCliente_aus = new javax.swing.JTextField();
         jTxtVendedor_aus = new javax.swing.JTextField();
-        jTxtDesconto_aus = new javax.swing.JTextField();
+        jTxtTransporte_aus = new javax.swing.JTextField();
         Transporte1 = new javax.swing.JLabel();
         jTxtForma_aus = new javax.swing.JTextField();
         Transporte2 = new javax.swing.JLabel();
@@ -62,9 +63,9 @@ public class JDlgVendas_aus extends javax.swing.JDialog {
 
         Transporte.setText("Status da Venda");
 
-        jTxt_vendas_aus.addActionListener(new java.awt.event.ActionListener() {
+        jTxtCodigoVendas_aus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxt_vendas_ausActionPerformed(evt);
+                jTxtCodigoVendas_ausActionPerformed(evt);
             }
         });
 
@@ -176,7 +177,7 @@ public class JDlgVendas_aus extends javax.swing.JDialog {
                                         .addGroup(layout.createSequentialGroup()
                                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jTxt_vendas_aus, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(jTxtCodigoVendas_aus, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGap(194, 194, 194))
                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -185,7 +186,7 @@ public class JDlgVendas_aus extends javax.swing.JDialog {
                                         .addComponent(jTxtData_aus, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(239, 239, 239)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTxtDesconto_aus, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTxtTransporte_aus, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jTxtVendedor_aus, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(Transporte1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))))
@@ -200,7 +201,7 @@ public class JDlgVendas_aus extends javax.swing.JDialog {
                     .addComponent(jLabel4))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTxt_vendas_aus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtCodigoVendas_aus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTxtVendedor_aus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -212,13 +213,14 @@ public class JDlgVendas_aus extends javax.swing.JDialog {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTxtData_aus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTxtDesconto_aus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
+                    .addComponent(jTxtTransporte_aus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25)
                 .addComponent(Transporte)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCboStatus_aus, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel3)
+                    .addComponent(jCboStatus_aus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(24, 24, 24)
@@ -228,7 +230,7 @@ public class JDlgVendas_aus extends javax.swing.JDialog {
                         .addComponent(Transporte2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jTxtForma_aus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBtnIncluir_aus)
                     .addComponent(jBtnAlterar_aus)
@@ -242,9 +244,9 @@ public class JDlgVendas_aus extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTxt_vendas_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxt_vendas_ausActionPerformed
+    private void jTxtCodigoVendas_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtCodigoVendas_ausActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxt_vendas_ausActionPerformed
+    }//GEN-LAST:event_jTxtCodigoVendas_ausActionPerformed
 
     private void jTxtVendedor_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtVendedor_ausActionPerformed
         // TODO add your handling code here:
@@ -255,11 +257,16 @@ public class JDlgVendas_aus extends javax.swing.JDialog {
     }//GEN-LAST:event_jTxtData_ausActionPerformed
 
     private void jBtnIncluir_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluir_ausActionPerformed
+        Util.habilitar(true, jBtnConfirmar_aus, jBtnCancelar_aus,jTxtCodigoVendas_aus, jTxtTransporte_aus, jTxtCliente_aus, jTxtData_aus, jTxtForma_aus,jTxtVendedor_aus,jCboStatus_aus);
+        Util.habilitar(false, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.limpar(jTxtCodigoVendas_aus, jTxtTransporte_aus, jTxtCliente_aus, jTxtData_aus, jTxtForma_aus,jTxtVendedor_aus,jCboStatus_aus);
         // TODO add your handling code here:
 
     }//GEN-LAST:event_jBtnIncluir_ausActionPerformed
 
     private void jBtnAlterar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterar_ausActionPerformed
+        Util.habilitar(false, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.habilitar(true, jBtnCancelar_aus, jBtnConfirmar_aus, jTxtCodigoVendas_aus, jTxtTransporte_aus, jTxtCliente_aus, jTxtData_aus, jTxtForma_aus,jTxtVendedor_aus,jCboStatus_aus);
         // TODO add your handling code here:
 
     }//GEN-LAST:event_jBtnAlterar_ausActionPerformed
@@ -276,52 +283,22 @@ public class JDlgVendas_aus extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnExcluir_ausActionPerformed
 
     private void jBtnConfirmar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmar_ausActionPerformed
-        // TODO add your handling code here:
-        //        Mecc_usuario usuario = new Mecc_usuario();
-        //        int cod = Integer.valueOf(jTxtCodigo.getText());
-        //        usuario.setMecc_idusuario(cod);
-        //        usuario.setMecc_nome(jTxtNome.getText());
-        //        usuario.setMecc_apelido(jTxtApelido.getText());
-        //        usuario.setMecc_cpf(jTxtCpf.getText());
-        //        usuario.setMecc_senha(jTxtSenha.getText());
-        //        usuario.setMecc_dataNascimento(null);//jTxtDatanasc.getText());
-        //        usuario.setMecc_nivel(jCboNivel.getSelectedIndex());
-        //        if (jChbAtivo.isSelected() == true) {
-            //            usuario.setMecc_ativo("S");
-            //        } else {
-            //            usuario.setMecc_ativo("N");
-            //        }
-        //
-        //        Mecc_usuarioDAO mecc_usuarioDAO = new Mecc_usuarioDAO();
-        //        mecc_usuarioDAO.insert(usuario);
-        //        desabilitar();
+        Util.habilitar(true, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.habilitar(false,jBtnCancelar_aus, jBtnConfirmar_aus, jTxtCodigoVendas_aus, jTxtTransporte_aus, jTxtCliente_aus, jTxtData_aus, jTxtForma_aus,jTxtVendedor_aus,jCboStatus_aus);
     }//GEN-LAST:event_jBtnConfirmar_ausActionPerformed
 
     private void jBtnCancelar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelar_ausActionPerformed
+        Util.habilitar(true, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.habilitar(false,jBtnCancelar_aus, jBtnConfirmar_aus, jTxtCodigoVendas_aus, jTxtTransporte_aus, jTxtCliente_aus, jTxtData_aus, jTxtForma_aus,jTxtVendedor_aus,jCboStatus_aus);
         // TODO add your handling code here:
 
     }//GEN-LAST:event_jBtnCancelar_ausActionPerformed
 
     private void jBtnPesquisar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisar_ausActionPerformed
-        // TODO add your handling code here:
-        //        String resp = JOptionPane.showInputDialog(null, "Entre com o código: ");
-        //        Mecc_usuarioDAO mecc_usuarioDAO = new Mecc_usuarioDAO();
-        //
-        //        int cod = Integer.parseInt(resp);
-        //        Mecc_usuario usuario = (Mecc_usuario) mecc_usuarioDAO.list(cod);
-        //        String cad = String.valueOf(usuario.getMecc_idusuario());
-        //        jTxtCodigo.setText(cad);
-        //        jTxtNome.setText(usuario.getMecc_nome());
-        //        jTxtApelido.setText(usuario.getMecc_apelido());
-        //        jTxtCpf.setText(usuario.getMecc_cpf());
-        //        jTxtSenha.setText(usuario.getMecc_senha());
-        //        //jTxtDatanasc.setText( usuario.getMecc_DataNascimento));
-        //        jCboNivel.setSelectedIndex(usuario.getMecc_nivel());
-        //        if (usuario.getMecc_ativo().equals("S") == true) {
-            //            jChbAtivo.setSelected(true);
-            //        } else {
-            //            jChbAtivo.setSelected(false);
-            //        }
+
+         JDlgPesquisarClientes_aus jDlgPesquisarClientes_aus = new JDlgPesquisarClientes_aus(null, true);
+        jDlgPesquisarClientes_aus.setVisible(true);
+        
     }//GEN-LAST:event_jBtnPesquisar_ausActionPerformed
 
     /**
@@ -382,10 +359,10 @@ public class JDlgVendas_aus extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField jTxtCliente_aus;
+    private javax.swing.JTextField jTxtCodigoVendas_aus;
     private javax.swing.JTextField jTxtData_aus;
-    private javax.swing.JTextField jTxtDesconto_aus;
     private javax.swing.JTextField jTxtForma_aus;
+    private javax.swing.JTextField jTxtTransporte_aus;
     private javax.swing.JTextField jTxtVendedor_aus;
-    private javax.swing.JTextField jTxt_vendas_aus;
     // End of variables declaration//GEN-END:variables
 }

@@ -4,6 +4,7 @@
  */
 package view;
 
+import Tools.Util;
 import javax.swing.JOptionPane;
 
 public class JDlgClientes_aus extends javax.swing.JDialog {
@@ -377,15 +378,23 @@ public class JDlgClientes_aus extends javax.swing.JDialog {
         // TODO add your handling code jBtnIncluir  }//GEN-LAST:event_jTxtEmail_ausActionPerformed
       }
     private void jBtnIncluir_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluir_ausActionPerformed
+        Util.habilitar(true, jBtnConfirmar_aus, jBtnCancelar_aus,jTxtCodigo_aus, jTxtNome_aus, jTxtAlergias_aus, jTxtBairro_aus, jTxtCep_aus, jTxtCpf_aus, jTxtDataNascimento_aus, jTxtEmail_aus, jTxtIdade_aus, jTxtNomeSocial_aus, jTxtNumero_aus, jTxtRg_aus,jTxtRua_aus, jTxtSobrenome_aus, jTxtTelefone_aus, jTxtTipoPele_aus);
+        Util.habilitar(false, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.limpar(jTxtCodigo_aus, jTxtNome_aus, jTxtAlergias_aus, jTxtBairro_aus, jTxtCep_aus, jTxtCpf_aus, jTxtDataNascimento_aus, jTxtEmail_aus, jTxtIdade_aus, jTxtNomeSocial_aus, jTxtNumero_aus, jTxtRg_aus,jTxtRua_aus, jTxtSobrenome_aus, jTxtTelefone_aus, jTxtTipoPele_aus);
         // TODO add your handling code here:
     }//GEN-LAST:event_jBtnIncluir_ausActionPerformed
 
     private void jBtnPesquisar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisar_ausActionPerformed
+
+        JDlgPesquisarClientes_aus jDlgPesquisarClientes_aus = new JDlgPesquisarClientes_aus(null, true);
+        jDlgPesquisarClientes_aus.setVisible(true);
         // TODO add your handling code here:
         
     }//GEN-LAST:event_jBtnPesquisar_ausActionPerformed
 
     private void jBtnAlterar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterar_ausActionPerformed
+       Util.habilitar(false, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.habilitar(true, jBtnCancelar_aus, jBtnConfirmar_aus, jTxtCodigo_aus, jTxtCodigo_aus, jTxtNome_aus, jTxtAlergias_aus, jTxtBairro_aus, jTxtCep_aus, jTxtCpf_aus, jTxtDataNascimento_aus, jTxtEmail_aus, jTxtIdade_aus, jTxtNomeSocial_aus, jTxtNumero_aus, jTxtRg_aus,jTxtRua_aus, jTxtSobrenome_aus, jTxtTelefone_aus, jTxtTipoPele_aus);
         // TODO add your handling code here:
     }//GEN-LAST:event_jBtnAlterar_ausActionPerformed
 
@@ -401,11 +410,15 @@ public class JDlgClientes_aus extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnExcluir_ausActionPerformed
 
     private void jBtnConfirmar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmar_ausActionPerformed
-        // TODO add your handling code here:
+        Util.habilitar(true, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.habilitar(false, jBtnCancelar_aus, jBtnConfirmar_aus, jTxtCodigo_aus, jTxtCodigo_aus, jTxtNome_aus, jTxtAlergias_aus, jTxtBairro_aus, jTxtCep_aus, jTxtCpf_aus, jTxtDataNascimento_aus, jTxtEmail_aus, jTxtIdade_aus, jTxtNomeSocial_aus, jTxtNumero_aus, jTxtRg_aus,jTxtRua_aus, jTxtSobrenome_aus, jTxtTelefone_aus, jTxtTipoPele_aus);        
+// TODO add your handling code here:
         
     }//GEN-LAST:event_jBtnConfirmar_ausActionPerformed
 
     private void jBtnCancelar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelar_ausActionPerformed
+      Util.habilitar(true, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+      Util.habilitar(false, jBtnCancelar_aus, jBtnConfirmar_aus, jTxtCodigo_aus, jTxtCodigo_aus, jTxtNome_aus, jTxtAlergias_aus, jTxtBairro_aus, jTxtCep_aus, jTxtCpf_aus, jTxtDataNascimento_aus, jTxtEmail_aus, jTxtIdade_aus, jTxtNomeSocial_aus, jTxtNumero_aus, jTxtRg_aus,jTxtRua_aus, jTxtSobrenome_aus, jTxtTelefone_aus, jTxtTipoPele_aus);
         // TODO add your handling code here:
     }//GEN-LAST:event_jBtnCancelar_ausActionPerformed
 

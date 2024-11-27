@@ -68,7 +68,7 @@
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Component id="jLabel1" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
-                                              <Component id="jTxt_vendas_aus" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                                              <Component id="jTxtCodigoVendas_aus" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="194" max="-2" attributes="0"/>
                                       </Group>
@@ -83,7 +83,7 @@
                                   </Group>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTxtDesconto_aus" min="-2" pref="71" max="-2" attributes="0"/>
+                                  <Component id="jTxtTransporte_aus" min="-2" pref="71" max="-2" attributes="0"/>
                                   <Component id="jTxtVendedor_aus" min="-2" pref="71" max="-2" attributes="0"/>
                                   <Component id="jLabel4" min="-2" pref="94" max="-2" attributes="0"/>
                                   <Component id="Transporte1" alignment="0" min="-2" pref="74" max="-2" attributes="0"/>
@@ -106,7 +106,7 @@
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTxt_vendas_aus" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtCodigoVendas_aus" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTxtVendedor_aus" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -122,15 +122,16 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jTxtData_aus" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtDesconto_aus" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTxtTransporte_aus" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Component id="Transporte" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jCboStatus_aus" alignment="1" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jCboStatus_aus" min="-2" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
@@ -143,7 +144,7 @@
                       <Component id="jTxtForma_aus" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="53" max="32767" attributes="0"/>
+              <EmptySpace pref="65" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jBtnIncluir_aus" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jBtnAlterar_aus" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -183,9 +184,9 @@
         <Property name="text" type="java.lang.String" value="Status da Venda"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxt_vendas_aus">
+    <Component class="javax.swing.JTextField" name="jTxtCodigoVendas_aus">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxt_vendas_ausActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtCodigoVendas_ausActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTxtData_aus">
@@ -200,7 +201,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTxtVendedor_ausActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtDesconto_aus">
+    <Component class="javax.swing.JTextField" name="jTxtTransporte_aus">
     </Component>
     <Component class="javax.swing.JLabel" name="Transporte1">
       <Properties>

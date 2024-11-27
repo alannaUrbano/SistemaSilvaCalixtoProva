@@ -4,6 +4,7 @@
  */
 package view;
 import javax.swing.JOptionPane;
+import Tools.Util;
 
 public class JDlgCategorias_aus extends javax.swing.JDialog {
 
@@ -233,6 +234,9 @@ public class JDlgCategorias_aus extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBtnIncluir_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIncluir_ausActionPerformed
+        Util.habilitar(true, jBtnConfirmar_aus, jBtnCancelar_aus,jTxtCodigo_aus, jTxtSetor_aus, jTxtEfeitos_aus, jTxtFatorFps_aus, jCboFaixaetaria_aus, jTxtAtivos_aus, jTxtTratamentos_aus, jTxtPrecaucoes_aus);
+        Util.habilitar(false, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.limpar(jTxtCodigo_aus, jTxtSetor_aus, jTxtEfeitos_aus, jTxtFatorFps_aus, jCboFaixaetaria_aus, jTxtAtivos_aus, jTxtTratamentos_aus, jTxtPrecaucoes_aus);
     }//GEN-LAST:event_jBtnIncluir_ausActionPerformed
 
     private void jTxtSetor_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtSetor_ausActionPerformed
@@ -250,10 +254,15 @@ public class JDlgCategorias_aus extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnExcluir_ausActionPerformed
 
     private void jBtnConfirmar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnConfirmar_ausActionPerformed
-       
+        Util.habilitar(true, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.habilitar(false, jBtnCancelar_aus, jBtnConfirmar_aus, jTxtCodigo_aus, jTxtSetor_aus, jTxtEfeitos_aus, jTxtFatorFps_aus, jCboFaixaetaria_aus, jTxtAtivos_aus, jTxtTratamentos_aus, jTxtPrecaucoes_aus);
+        
     }//GEN-LAST:event_jBtnConfirmar_ausActionPerformed
 
     private void jBtnCancelar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCancelar_ausActionPerformed
+        Util.habilitar(true, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus);
+        Util.habilitar(false, jBtnCancelar_aus, jBtnConfirmar_aus, jTxtCodigo_aus, jTxtSetor_aus, jTxtEfeitos_aus, jTxtFatorFps_aus, jCboFaixaetaria_aus, jTxtAtivos_aus, jTxtTratamentos_aus, jTxtPrecaucoes_aus);
+
     }//GEN-LAST:event_jBtnCancelar_ausActionPerformed
 
     private void jBtnPesquisar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPesquisar_ausActionPerformed
@@ -264,6 +273,8 @@ public class JDlgCategorias_aus extends javax.swing.JDialog {
     }//GEN-LAST:event_jBtnPesquisar_ausActionPerformed
 
     private void jBtnAlterar_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAlterar_ausActionPerformed
+        Util.habilitar(true, jBtnConfirmar_aus, jBtnCancelar_aus, jTxtCodigo_aus, jTxtSetor_aus, jTxtEfeitos_aus, jTxtFatorFps_aus, jCboFaixaetaria_aus, jTxtAtivos_aus, jTxtTratamentos_aus, jTxtPrecaucoes_aus);
+        Util.habilitar(false, jBtnIncluir_aus, jBtnAlterar_aus, jBtnExcluir_aus, jBtnPesquisar_aus); 
     }//GEN-LAST:event_jBtnAlterar_ausActionPerformed
 
     private void jTxtCodigo_ausActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtCodigo_ausActionPerformed
